@@ -73,3 +73,7 @@ section iframe {
 .contact-us a {
   text-decoration: none;
 }
+
+.products img {
+  object-fit: contain;
+}

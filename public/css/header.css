@@ -42,12 +42,20 @@
   z-index: 100;
 }
 
-nav img {
+nav {
   visibility: hidden;
+}
+
+nav img {
   width: 150px;
 }
 
+.scrolled,
 .scrolled img {
   visibility: visible;
   transition: 1s;
+}
+
+.navcss {
+  font-size: 1.5rem;
 }

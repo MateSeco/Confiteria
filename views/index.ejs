@@ -3,9 +3,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <%- include("./partials/headers.ejs"); %>
-
     <title>Memé de Santis</title>
+
+    <%- include("./partials/headers.ejs"); %>
   </head>
   <body>
     <header class="header">
@@ -50,6 +50,7 @@
     <main class="">
       <section class="about-us container" id="about-us">
         <h2>Quiénes somos</h2>
+        <%- include("./partials/about-us.ejs"); %>
       </section>
       <div class="intersections-image intersections1"></div>
       <section class="products container" id="products">
@@ -58,6 +59,14 @@
       <div class="intersections-image intersections2"></div>
       <section class="contact-us container" id="contact-us">
         <h2>Contáctanos</h2>
+        <a href="https://goo.gl/maps/awwRHXWVC9De2pHz8" class="ubicacion"
+          >Av. de Mayo 339, Villa Adelina, Provincia de Buenos Aires</a
+        >
+        <iframe
+          src="https://www.google.com/maps/d/u/0/embed?mid=1cVloyyOxJ4tjOYJLwopl7qSivsplvoTL"
+          width="640"
+          height="480"
+        ></iframe>
       </section>
     </main>
     <footer class="footer">

@@ -37,3 +37,14 @@ main section {
     ),
     url("../images/pexels-skyler-ewing-4600650.jpg");
 }
+
+#map {
+  height: 400px;
+  width: 100%;
+}
+
+section iframe {
+  position: relative;
+  top: 50px;
+  left: auto;
+}

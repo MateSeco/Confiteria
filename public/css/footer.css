@@ -1,4 +1,14 @@
 footer {
   background-color: var(--main-color);
-  background-image: linear-gradient(var(--main-color), rgb(30, 30, 30));
+  background-image: repeating-linear-gradient(
+    90deg,
+    var(--main-color) 0px,
+    var(--main-color) 30px,
+    rgb(70, 62, 62) 30px,
+    rgb(70, 62, 62) 60px
+  );
+  opacity: 0.9;
+  min-height: 30vh;
+  padding-top: 20px;
+  line-height: 30px;
 }

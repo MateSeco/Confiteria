@@ -5,7 +5,9 @@ $(window).scroll(function () {
     $(".nav-link").addClass("text-light");
     $(".navbar-brand").addClass("text-light");
   } else {
+    $("nav").addClass("unscrolled");
     $("nav").removeClass("scrolled");
+
     $(".nav-link").removeClass("text-light");
   }
 });

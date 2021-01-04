@@ -38,8 +38,7 @@
 .scrolled {
   background-color: var(--main-color);
   opacity: 0.9;
-  transition: 0.5s;
-  z-index: 100;
+  transition: 2s;
 }
 
 nav {
@@ -53,7 +52,12 @@ nav img {
 .scrolled,
 .scrolled img {
   visibility: visible;
-  transition: 1s;
+}
+
+.unscrolled,
+.unscrolled img {
+  visibility: hidden;
+  transition: 0.5s;
 }
 
 .navcss {

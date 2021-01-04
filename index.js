@@ -11,7 +11,6 @@ app.set("views", path.join(__dirname, "views")); //Setting up default view path
 app.use(express.static(path.join(__dirname, "public")));
 app.set("view engine", "ejs");
 
-//comment
 //seeder();
 routes(app);
 

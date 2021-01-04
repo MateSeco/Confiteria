@@ -1,0 +1,4 @@
+footer {
+  background-color: var(--main-color);
+  background-image: linear-gradient(var(--main-color), rgb(30, 30, 30));
+}

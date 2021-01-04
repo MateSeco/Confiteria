@@ -45,12 +45,29 @@ main section {
 
 .iframe-container {
   position: relative;
+  width: 60vw;
+  height: 70vh;
 }
 
 section iframe {
   position: absolute;
   top: 50px;
-  left: auto;
+  left: 10vw;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .iframe-container {
+    width: 90vw;
+    height: 70vh;
+  }
+
+  section iframe {
+    left: 0vw;
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .contact-us a {

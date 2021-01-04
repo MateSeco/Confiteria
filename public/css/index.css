@@ -43,8 +43,16 @@ main section {
   width: 100%;
 }
 
-section iframe {
+.iframe-container {
   position: relative;
+}
+
+section iframe {
+  position: absolute;
   top: 50px;
   left: auto;
+}
+
+.contact-us a {
+  text-decoration: none;
 }

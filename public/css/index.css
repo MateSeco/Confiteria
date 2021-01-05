@@ -1,5 +1,5 @@
 :root {
-  --main-color: rgb(128, 97, 69);
+  --main-color: #461212;
 }
 
 body {
@@ -89,38 +89,4 @@ section iframe {
 
 .contact-us a {
   text-decoration: none;
-}
-
-.products img {
-  object-fit: contain;
-}
-
-.products .product-card {
-  height: 340px;
-}
-
-.products .product-card-img img {
-  object-fit: cover;
-  height: 200px;
-}
-
-.product-card-img {
-  z-index: 500;
-}
-
-.product-card-img:hover {
-  background-color: rgba(0, 0, 0, 0.6);
-}
-
-.products .product-card .card-text {
-  padding-top: 10px;
-  border-top: 1px dotted #c2c2c2;
-  height: 80px;
-  color: #666;
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  font-family: "Open Sans", sans-serif;
-  font-size: 0.8rem;
 }

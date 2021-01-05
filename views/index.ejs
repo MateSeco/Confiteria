@@ -13,7 +13,7 @@
 
       <div class="header-image">
         <div class="header-content">
-          <h1>Confitería</h1>
+          <img src="images/logo1.svg" alt="logo" />
         </div>
       </div>
     </header>
@@ -27,7 +27,7 @@
 
       <section class="products container" id="products">
         <h2>Productos</h2>
-        <div class="row">
+        <div class="row no-gutters">
           <% products.forEach((product) => { %>
           <div class="col-12 col-lg-4">
             <%-include("./partials/product-card.ejs", {product}); %>

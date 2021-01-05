@@ -9,6 +9,10 @@ const productModel = (sequelize, DataTypes) => {
       type: DataTypes.STRING,
       allowNull: false,
     },
+    quantity: {
+      type: DataTypes.STRING(20),
+      allowNull: true,
+    },
     price: {
       type: DataTypes.INTEGER,
       allowNull: false,
@@ -16,11 +20,12 @@ const productModel = (sequelize, DataTypes) => {
     image: {
       type: DataTypes.STRING,
       allowNull: false,
-      defaultValue: "defaultImage",
+      defaultValue: "defaultImage.jpg",
     },
     imageAlt: {
       type: DataTypes.STRING(20),
       allowNull: true,
+      defaultValue: "defaultImage",
     },
   });
 

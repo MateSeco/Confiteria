@@ -18,6 +18,10 @@ const productModel = (sequelize, DataTypes) => {
       allowNull: false,
       defaultValue: "defaultImage",
     },
+    imageAlt: {
+      type: DataTypes.STRING(20),
+      allowNull: true,
+    },
   });
 
   console.log(Product === sequelize.models.Product);

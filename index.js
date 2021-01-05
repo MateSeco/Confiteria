@@ -4,8 +4,6 @@ const app = express();
 const path = require("path");
 const routes = require("./routes/routes");
 /* const seeder = require("./seeders"); */
-const { Client } = require("@googlemaps/google-maps-services-js");
-/* const location = require("./location"); */
 
 const port = process.env.PORT;
 

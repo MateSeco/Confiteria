@@ -77,3 +77,19 @@ section iframe {
 .products img {
   object-fit: contain;
 }
+
+.products .product-card {
+  height: 300px;
+}
+
+.products .product-card img {
+  object-fit: cover;
+  height: 150px;
+}
+
+.products .product-card .card-text {
+  height: 70px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

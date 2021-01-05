@@ -1,5 +1,5 @@
+const productController = require("../controllers/productController");
+
 module.exports = function routes(app) {
-  app.get("/", (req, res) => {
-    res.render("index");
-  });
+  app.get("/", productController.all);
 };

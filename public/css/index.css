@@ -89,7 +89,8 @@ section iframe {
 
 .products .product-card .card-text {
   height: 70px;
-  white-space: nowrap;
   overflow: hidden;
-  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
 }

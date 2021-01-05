@@ -2,10 +2,27 @@
   --main-color: rgb(128, 97, 69);
 }
 
+body {
+  font-family: "Roboto Condensed", sans-serif;
+  font-style: normal;
+  font-variant-ligatures: normal;
+  font-variant-caps: normal;
+  font-variant-numeric: normal;
+  font-variant-east-asian: normal;
+  font-weight: 400;
+  font-stretch: normal;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
 main section {
-  margin-top: 25px;
-  margin-bottom: 25px;
+  margin-top: 100px;
+  margin-bottom: 40px;
   min-height: 100vh;
+}
+
+h2 {
+  margin-bottom: 30px;
 }
 
 .intersections-image {
@@ -79,18 +96,29 @@ section iframe {
 }
 
 .products .product-card {
-  height: 300px;
+  height: 340px;
+  transition: 0.3s;
+}
+
+.products .product-card:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
 }
 
 .products .product-card img {
   object-fit: cover;
-  height: 150px;
+  height: 200px;
 }
 
 .products .product-card .card-text {
-  height: 70px;
+  padding-top: 10px;
+  border-top: 1px dotted #c2c2c2;
+  height: 80px;
+  color: #666;
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.8rem;
 }

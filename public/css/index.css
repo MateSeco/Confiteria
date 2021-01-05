@@ -22,7 +22,7 @@ main section {
 }
 
 h2 {
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .intersections-image {
@@ -97,17 +97,19 @@ section iframe {
 
 .products .product-card {
   height: 340px;
-  transition: 0.3s;
 }
 
-.products .product-card:hover {
-  transform: scale(1.1);
-  transition: 0.3s;
-}
-
-.products .product-card img {
+.products .product-card-img img {
   object-fit: cover;
   height: 200px;
+}
+
+.product-card-img {
+  z-index: 500;
+}
+
+.product-card-img:hover {
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .products .product-card .card-text {

@@ -8,22 +8,16 @@
 }
 
 @font-face {
-  font-family: "Soleil Book";
+  font-family: "Open Sans";
   font-style: normal;
-  font-weight: normal;
-  src: local("Soleil Book"), url("fonts/SoleilBook.woff") format("woff");
+  font-weight: 400;
+  src: local("Open Sans"), url("fonts/OpenSans-Regular.woff") format("woff");
 }
 
 @font-face {
-  font-family: "Soleil Light";
+  font-family: "Roboto Condensed";
   font-style: normal;
-  font-weight: normal;
-  src: local("Soleil Light"), url("fonts/SoleilLight.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Soleil Bold";
-  font-style: normal;
-  font-weight: normal;
-  src: local("Soleil Bold"), url("fonts/SoleilBold.woff") format("woff");
+  font-weight: 400;
+  src: local("Roboto Condensed"),
+    url("fonts/RobotoCOndensed-Regular.woff") format("woff");
 }

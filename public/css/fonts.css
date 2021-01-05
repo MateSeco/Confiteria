@@ -4,14 +4,14 @@
   font-family: "Soleil Regular";
   font-style: normal;
   font-weight: normal;
-  src: local("Soleil Regular"), url("fonts/SoleilRegular.woff") format("woff");
+  src: local("Soleil Regular"), url("/fonts/SoleilRegular.woff") format("woff");
 }
 
 @font-face {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
-  src: local("Open Sans"), url("fonts/OpenSans-Regular.woff") format("woff");
+  src: local("Open Sans"), url("/fonts/OpenSans-Regular.woff") format("woff");
 }
 
 @font-face {
@@ -19,5 +19,5 @@
   font-style: normal;
   font-weight: 400;
   src: local("Roboto Condensed"),
-    url("fonts/RobotoCondensed-Regular.woff") format("woff");
+    url("/fonts/RobotoCondensed-Regular.woff") format("woff");
 }

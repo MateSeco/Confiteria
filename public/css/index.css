@@ -42,29 +42,6 @@ h2 {
   text-align: center;
 }
 
-@media only screen and (max-width: 1024px) {
-  .intersections-image {
-    min-height: 40vh;
-    background-attachment: scroll;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .intersections-image {
-    min-height: 35vh;
-    background-attachment: scroll;
-  }
-}
-
-@media only screen and (orientation: landscape) {
-  .intersections-image {
-    background-size: contain;
-    height: 100%;
-    background-attachment: scroll;
-    background-position: center center;
-  }
-}
-
 .intersections1 {
   background-image: linear-gradient(
       rgba(42, 165, 165, 0.3),
@@ -100,6 +77,20 @@ section iframe {
   height: 100%;
 }
 
+.about-us-text {
+  font-family: "Open Sans";
+}
+
+.contact-us a {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  .contact-us .iframe-container {
+    display: inline-block;
+  }
+}
+
 @media screen and (max-width: 991px) {
   .iframe-container {
     width: 300px;
@@ -113,16 +104,28 @@ section iframe {
   }
 }
 
-.about-us-text {
-  font-family: "Open Sans";
+@media only screen and (max-width: 1024px) {
+  .intersections-image {
+    min-height: 40vh;
+    background-attachment: scroll;
+  }
 }
 
-.contact-us a {
-  text-decoration: none;
+@media only screen and (max-width: 768px) {
+  .intersections-image {
+    min-height: 35vh;
+    background-attachment: scroll;
+  }
 }
 
-@media screen and (max-width: 768px) {
-  .contact-us .iframe-container {
-    display: inline-block;
+@media only screen and (orientation: landscape) {
+  .intersections-image {
+    background-size: contain;
+    height: 100%;
+    background-attachment: scroll;
+    background-position: center center;
+  }
+  .iframe-container {
+    height: 100vh;
   }
 }

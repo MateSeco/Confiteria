@@ -15,6 +15,12 @@ body {
   line-height: 1.8;
 }
 
+@media screen and (max-width: 768px) {
+  body {
+    text-align: center;
+  }
+}
+
 main section {
   margin-top: 100px;
   margin-bottom: 40px;
@@ -27,30 +33,50 @@ h2 {
 
 .intersections-image {
   background-color: var(--main-color);
-
   background-attachment: fixed;
   background-size: 100%;
   background-repeat: no-repeat;
-  background-position: center center;
   width: 100%;
   min-height: 100vh;
   line-height: 100vh;
   text-align: center;
-  padding: 150px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .intersections-image {
+    min-height: 40vh;
+    background-attachment: scroll;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .intersections-image {
+    min-height: 35vh;
+    background-attachment: scroll;
+  }
+}
+
+@media only screen and (orientation: landscape) {
+  .intersections-image {
+    background-size: contain;
+    height: 100%;
+    background-attachment: scroll;
+    background-position: center center;
+  }
 }
 
 .intersections1 {
   background-image: linear-gradient(
-      rgba(250, 250, 250, 0.2),
-      rgba(128, 97, 69, 0.5)
+      rgba(42, 165, 165, 0.3),
+      rgba(42, 165, 165, 0.3)
     ),
     url("../images/pexels-artem-beliaikin-2872882-min.jpg");
 }
 
 .intersections2 {
   background-image: linear-gradient(
-      rgba(250, 250, 250, 0.2),
-      rgba(128, 97, 69, 0.5)
+      rgba(42, 165, 165, 0.3),
+      rgba(42, 165, 165, 0.3)
     ),
     url("../images/pexels-skyler-ewing-4600650.jpg");
 }
@@ -93,4 +119,10 @@ section iframe {
 
 .contact-us a {
   text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  .contact-us .iframe-container {
+    display: inline-block;
+  }
 }

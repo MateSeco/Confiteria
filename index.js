@@ -7,7 +7,7 @@ const routes = require("./routes/routes");
 /* const seeder = require("./seeders"); */
 
 const port = process.env.PORT;
-
+//dfs
 app.use(cors());
 app.set("views", path.join(__dirname, "views")); //Setting up default view path
 app.use(express.static(path.join(__dirname, "public")));

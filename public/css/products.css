@@ -13,13 +13,32 @@
 
 .product-card-img {
   z-index: 500;
+  position: relative;
 }
 
-.product-card-img:hover {
-  background-color: rgba(0, 0, 0, 0.6);
+.product-card-img::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  height: 1px;
+  width: 100%;
 }
 
-.products .product-card .card-text {
+.product-card-img:hover::before {
+  padding-top: 70px;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 30px;
+  color: white;
+  content: "\f002";
+  height: 200px;
+  background: rgba(0, 0, 0, 0.4);
+  transition: 0.5s ease height;
+  transform: translateY(0%);
+}
+
+.card-text {
   padding-top: 10px;
   border-top: 1px dotted #c2c2c2;
   height: 80px;

@@ -1,59 +1,59 @@
 <!-- Button trigger modal -->
-<button
-  type="button"
-  class="invisible-button"
-  data-toggle="modal"
-  data-target="#<%= product.name.replace(" ","") %>"
->
-  <div class="card product-card mb-5" style="width: 18rem">
-    <div class="product-card-img">
-      <img
-        src="<%- product.image %>"
-        class="card-img-top"
-        alt="<%-
+<button type="button" class="invisible-button" data-toggle="modal"
+data-target="#<%= product.name.replace(" ","") %>" >
+<div class="card product-card mb-5" style="width: 18rem">
+  <div class="product-card-img">
+    <img
+      src="<%- product.image %>"
+      class="card-img-top"
+      alt="<%-
     product.imageAlt %>"
-      />
+    />
+  </div>
+  <div class="card-body">
+    <div class="card-body-top d-flex justify-content-between">
+      <h5 class="card-title"><%- product.name%></h5>
+<div>
+      <small style="border-right: 1px solid #666; padding-right: 5px"
+        >Cant.: <%- product.quantity%></small
+      >
+
+      <small>Precio: $<%- product.price%></small>
     </div>
-    <div class="card-body">
+  </div>
+    <div class="card-text"><%- product.description %></div>
+  </div>
+</div>
+</button>
+<!-- Modal -->
+<div class="modal fade" id="<%= product.name.replace(" ","") %>" tabindex="-1"
+aria-labelledby="staticBackdropLabel" aria-hidden="true" >
+<div class="modal-dialog modal-dialog-centered modal-lg">
+  <div class="modal-content">
+    <div class="modal-header p-0">
+      <div class=" ">
+        <img
+          src="<%- product.image %>"
+          class="card-img-top"
+          alt="<%-
+          product.imageAlt %>"
+        />
+
+      </div>
+    </div>
+    <div class="modal-body">
       <div class="card-body-top d-flex justify-content-between">
         <h5 class="card-title"><%- product.name%></h5>
-        <div>
-          <small style="border-right: 1px solid #666; padding-right: 5px; "><%- product.quantity%></small>
-
-          <small>$<%- product.price%></small>
-        </div>
+  <div>
+        <small style="border-right: 1px solid #666; padding-right: 5px"
+          >Cantidad: <%- product.quantity%></small
+        >
+  
+        <small>Precio: $<%- product.price%></small>
       </div>
-
+    </div>
       <div class="card-text"><%- product.description %></div>
     </div>
   </div>
-</button>
-
-<!-- Modal -->
-<div
-  class="modal fade"
-  id="<%= product.name.replace(" ","") %>"
-  tabindex="-1"
-  aria-labelledby="staticBackdropLabel"
-  aria-hidden="true"
->
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="card product-card mb-5" style="width: 18rem">
-        <div class="product-card-img">
-          <img
-            src="<%- product.image %>"
-            class="card-img-top"
-            alt="<%-
-          product.imageAlt %>"
-          />
-        </div>
-        <div class="card-body">
-          <h5 class="card-title"><%- product.name%></h5>
-
-          <div class="card-text"><%- product.description %></div>
-        </div>
-      </div>
-    </div>
-  </div>
+</div>
 </div>

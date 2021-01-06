@@ -87,6 +87,10 @@ section iframe {
   }
 }
 
+.about-us-text {
+  font-family: "Open Sans";
+}
+
 .contact-us a {
   text-decoration: none;
 }

@@ -20,16 +20,18 @@
     <main class="">
       <section class="about-us container" id="about-us">
         <h2>Quiénes somos</h2>
-        <%- include("./partials/about-us.ejs"); %>
+        <div class="about-us-text">
+          <%- include("./partials/about-us.ejs"); %>
+        </div>
       </section>
 
       <div class="intersections-image intersections1"></div>
 
       <section class="products container" id="products">
         <h2>Productos</h2>
-        <div class="row no-gutters">
+        <div class="row">
           <% products.forEach((product) => { %>
-          <div class="col-12 col-lg-4">
+          <div class="col-12 col-md-6 col-lg-4">
             <%-include("./partials/product-card.ejs", {product}); %>
           </div>
           <% }); %>
@@ -49,7 +51,10 @@
             <span> <i class="fas fa-phone"></i> 011 4765-8758 </span>
             <br />
             <span>
-              <a href="https://goo.gl/maps/awwRHXWVC9De2pHz8" class="ubicacion"
+              <a
+                href="https://goo.gl/maps/awwRHXWVC9De2pHz8"
+                target="_blank"
+                class="ubicacion"
                 ><i class="fas fa-map-marker-alt"></i> Av. de Mayo 339, Villa
                 Adelina, Provincia de Buenos Aires</a
               >

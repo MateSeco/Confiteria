@@ -3,9 +3,9 @@ footer {
   background-image: repeating-linear-gradient(
     90deg,
     var(--main-color) 0px,
-    var(--main-color) 30px,
-    rgb(70, 62, 62) 30px,
-    rgb(70, 62, 62) 60px
+    var(--main-color) 20px,
+    rgb(70, 62, 62) 20px,
+    rgb(70, 62, 62) 20px
   );
   opacity: 0.9;
   min-height: 30vh;

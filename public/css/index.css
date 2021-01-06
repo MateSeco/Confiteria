@@ -15,12 +15,6 @@ body {
   line-height: 1.8;
 }
 
-@media screen and (max-width: 768px) {
-  body {
-    text-align: center;
-  }
-}
-
 main section {
   margin-top: 100px;
   margin-bottom: 40px;
@@ -85,9 +79,15 @@ section iframe {
   text-decoration: none;
 }
 
-@media screen and (max-width: 768px) {
-  .contact-us .iframe-container {
-    display: inline-block;
+@media only screen and (orientation: landscape) and (max-width: 991px) {
+  .intersections-image {
+    background-size: contain;
+    height: 100%;
+    background-attachment: scroll;
+    background-position: center center;
+  }
+  .iframe-container {
+    height: 100vh;
   }
 }
 
@@ -104,28 +104,17 @@ section iframe {
   }
 }
 
-@media only screen and (max-width: 1024px) {
-  .intersections-image {
-    min-height: 40vh;
-    background-attachment: scroll;
-  }
-}
-
 @media only screen and (max-width: 768px) {
+  body {
+    text-align: center;
+  }
+
   .intersections-image {
     min-height: 35vh;
     background-attachment: scroll;
   }
-}
 
-@media only screen and (orientation: landscape) {
-  .intersections-image {
-    background-size: contain;
-    height: 100%;
-    background-attachment: scroll;
-    background-position: center center;
-  }
-  .iframe-container {
-    height: 100vh;
+  .contact-us .iframe-container {
+    display: inline-block;
   }
 }

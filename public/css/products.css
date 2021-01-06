@@ -4,6 +4,7 @@
 
 .products .product-card {
   height: 340px;
+  border: none;
 }
 
 .products .product-card-img img {
@@ -38,6 +39,10 @@
   transform: translateY(0%);
 }
 
+.product-card-body {
+  padding: 1rem 0rem;
+}
+
 .card-text {
   padding-top: 10px;
   border-top: 1px dotted #c2c2c2;
@@ -49,6 +54,7 @@
   -webkit-box-orient: vertical;
   font-family: "Open Sans", sans-serif;
   font-size: 0.8rem;
+  text-align: left;
 }
 
 .products .invisible-button {

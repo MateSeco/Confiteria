@@ -10,7 +10,7 @@ data-target="#<%= product.name.replace(" ","") %>" >
     product.imageAlt %>"
     />
   </div>
-  <div class="card-body">
+  <div class="card-body product-card-body">
     <div class="card-body-top d-flex justify-content-between">
       <h5 class="card-title"><%- product.name%></h5>
 <div>
@@ -31,7 +31,7 @@ aria-labelledby="staticBackdropLabel" aria-hidden="true" >
 <div class="modal-dialog modal-dialog-centered modal-lg">
   <div class="modal-content">
     <div class="modal-header p-0">
-      <div class=" ">
+      <div class="modal-img">
         <img
           src="<%- product.image %>"
           class="card-img-top"
@@ -41,7 +41,7 @@ aria-labelledby="staticBackdropLabel" aria-hidden="true" >
 
       </div>
     </div>
-    <div class="modal-body">
+    <div class="modal-body p-4">
       <div class="card-body-top d-flex justify-content-between">
         <h5 class="card-title"><%- product.name%></h5>
   <div>
